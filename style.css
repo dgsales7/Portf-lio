@@ -18,7 +18,7 @@ body {
 .interface {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 15px ;
 }
 
 .flex {
@@ -38,8 +38,6 @@ body {
     transition: .2s;
 }
 
-.interface {}
-
 h2.titulo {
     color: white;
     font-size: 38px;
@@ -50,14 +48,11 @@ h2.titulo span {
     color: #00FF08;
 }
 
-button:hover,
-form .btn-enviar input:hover {
+button:hover, form .btn-enviar input:hover {
     box-shadow: 0px 0px 8px#00ff08;
     transform: scale(1.05);
 
 }
-
-
 
 /*ESTILO DO CABEÇALHO*/
 header {
@@ -92,20 +87,14 @@ header nav ul li {
     padding: 0 40px;
 }
 
-.logo img {
-    width: 250px;
-    height: 250px;
-}
-
-
-/* ESPAÇAMENTOS MENU*/
-.interface .menu-desktop {
-    word-spacing: 50px;
+/*.btn-contato button:hover{
+    box-shadow: 0px 0px09px color(#00ff08);
+    transform: scale(1.05);
 }
 
 /* ESTILO TOPO DO SITE */
 section.topo-do-site {
-    padding: 35px 4%;
+    padding: 40px 4%;
 }
 
 section.topo-do-site .flex {
@@ -117,8 +106,7 @@ section.topo-do-site .flex {
 .topo-do-site h1 {
     color: white;
     font-size: 42px;
-    line-height: 49px;
-
+    line-height: 40px;
 
 }
 
@@ -136,40 +124,20 @@ section.topo-do-site .flex {
     animation: flutuar 2s ease-in-out infinite alternate;
 }
 
-.img-topo-site img {
-
-    box-shadow: 0 0px 20px #00FF08;
-    /* Sombra inicial */
-    transition: box-shadow 0.5s ease;
-    /* Transição suave ao passar o mouse */
-
-}
-
-.img-topo-site img:hover {
-    box-shadow: 0 0px 60px rgba(0, 255, 8, 0.7);
-    /* Sombra mais intensa */
-}
-
 
 @keyframes flutuar {
     0% {
-        top: -5px;
+        top: 0;
     }
 
     100% {
-        top: 45px;
+        top: 50px;
     }
-}
-
-.topo-do-site .img-topo-site img {
-    width: 500px;
-    height: 500px;
-    border-radius: 100%;
 }
 
 /* Estilo das Especialidades */
 section.especialidades {
-    padding: 100px 4%;
+    padding: 40px 4%;
 }
 
 section.especialidades .flex {
@@ -227,7 +195,7 @@ section.sobre .flex {
 
 .sobre .txt-sobre h2 span {
     color: #00FF08;
-    display: flex;
+    display: block;
 }
 
 .sobre .txt-sobre p {
@@ -247,24 +215,10 @@ section.sobre .flex {
     transition: .2s;
 }
 
-.sobre .img-sobre img:hover {
-    box-shadow: 0 0px 30px rgba(0, 255, 8, 0.7);
-    /* Sombra mais intensa */
-}
-
-.sobre .img-sobre img {
-    width: 500px;
-    height: 500px;
-    border-radius: 100px;
-    box-shadow: 0 0px 15px #00FF08;/* Sombra inicial */
-    transition: box-shadow 0.5s ease;
-    /* Transição suave ao passar o mouse */
-}
-
 /*ESTILO DO PORTFÓLIO */
 section.portfolio {
     padding: 80px 4%;
-
+    
 }
 
 section.portfolio .flex {
@@ -312,11 +266,11 @@ section.portfolio .flex {
 }
 
 /*ESTILO DO FORMULÁRIO DE CONTATO */
-section.formulario {
-    padding: 40px 4%;
-}
+    section.formulario{
+      padding: 40px 4%;  
+    }
 
-form {
+form{
     max-width: 500px;
     margin: 0 auto;
     display: flex;
@@ -326,8 +280,7 @@ form {
     margin-top: 15px;
 }
 
-form input,
-form textarea {
+form input, form textarea{
     width: 100%;
     background-color: #242424;
     border: 0;
@@ -338,36 +291,36 @@ form textarea {
     font-size: 18px;
 }
 
-form textarea {
+form textarea{
     resize: none;
     max-height: 150px;
 }
 
-form .btn-enviar {
-    margin-top: 20px;
+form .btn-enviar{
+    margin-top: 20px;   
     text-align: center;
 }
 
-form .btn-enviar input {
+form .btn-enviar input{
     width: 120px;
     background-color: #00FF08;
-    color: #000;
+    color:#000;
     font-weight: 700;
     cursor: pointer;
     transition: .2s;
 
 }
 
-/* Habilidades */
-section.habilidades {
-    padding: 40px 4%;
+ /* Habilidades */
+section.habilidades{
+     padding: 40px 4%;
     text-align: center;
     color: white;
-}
+ }
 
-.habilidade-box {
+ .habilidade-box {
     padding: 40px 10%;
-
+    
     border-radius: 30px;
     margin: 20px;
     text-align: center;
@@ -385,9 +338,8 @@ section.habilidades {
 }
 
 .habilidade-box h3 {
-    white-space: nowrap;
-    /* Evita que o texto quebre em várias linhas */
-    font-size: 24px;
+    white-space: nowrap; /* Evita que o texto quebre em várias linhas */
+    font-size: 24px ;
     margin: 10px 0;
     color: white;
 }
@@ -400,14 +352,13 @@ section.habilidades {
 
 
 /* Estilo para Certificados */
-section.certificados {
+section.certificados{
     padding: 60px 4%;
     background-color: #000000;
     text-align: center;
     color: white;
 
 }
-
 .certificados .titulo {
     color: white;
     font-size: 38px;
@@ -424,8 +375,7 @@ section.certificados {
 
 
 .certificados .certificado-box {
-    background-color: #2d2d2d;
-    /* Fundo mais claro para os boxes */
+    background-color: #2d2d2d; /* Fundo mais claro para os boxes */
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -460,13 +410,12 @@ section.certificados {
 }
 
 .certificados .certificado-box a:hover {
-    color: #ffcc00;
-    /* Cor ao passar o mouse no link */
+    color: #ffcc00; /* Cor ao passar o mouse no link */
 }
 
 /* Currículo */
 section.curriculo {
-    padding: 60px;
+    padding: 60px ;
     text-align: center;
     color: white;
 }
@@ -489,7 +438,7 @@ section.curriculo button:hover {
 
 
 
-@media screen and (max-width:1020px) {
+ @media screen and (max-width:1020px) {
 
     /* CLASSES GERAIS */
     .flex {
@@ -582,8 +531,4 @@ section.curriculo button:hover {
 
 
     }
-}
-.footer{
-    color: white;
-    text-align: center;
 }
