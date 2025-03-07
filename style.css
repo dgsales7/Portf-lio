@@ -262,15 +262,17 @@ section.sobre .flex {
 }
 
 /*ESTILO DO PORTFÓLIO */
+
 section.portfolio {
     padding: 80px 4%;
-
+    position: relative;
 }
 
 section.portfolio .flex {
     justify-content: space-around;
     margin-top: 60px;
-
+    position: relative;
+    z-index: 1;
 }
 
 .img-port {
@@ -282,6 +284,8 @@ section.portfolio .flex {
     cursor: pointer;
     border-radius: 40px;
     position: relative;
+    filter: grayscale(100%) opacity(0.5);
+    pointer-events: none;
 }
 
 .img-port:hover {
@@ -308,8 +312,23 @@ section.portfolio .flex {
 
 .overlay:hover {
     opacity: 1;
-
 }
+
+.em-construcao {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px 40px;
+    border-radius: 20px;
+    text-align: center;
+    z-index: 2;
+}
+
 
 /*ESTILO DO FORMULÁRIO DE CONTATO */
 section.formulario {
@@ -472,7 +491,7 @@ section.curriculo {
 }
 
 section.curriculo button {
-    margin-top: 18px;
+    margin-top: 29px;
     background-color: #00FF08;
     border: none;
     padding: 10px 20px;
@@ -584,7 +603,7 @@ section.curriculo button:hover {
     }
 }
 .footer{
-    margin-top: 50px;
+    margin-top: 100px;
     background-color: rgba(28, 36, 29, 0.568);
     color: white;
     text-align: center;
@@ -598,7 +617,8 @@ section.curriculo button:hover {
    
 }
 .btn-social {
-    margin-bottom: 25px; /* Ajuste o valor conforme necessário */
+    margin-bottom: 25px; 
+
 }
 
 .footer-content .menu-desktop a{
