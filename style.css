@@ -254,7 +254,7 @@ section.sobre .flex {
 }
 
 .sobre .img-sobre img {
-    width: 500px;
+    width: 400px;
     height: 500px;
     border-radius: 100px;
     box-shadow: 0 0px 15px #00FF08;/* Sombra inicial */
@@ -515,6 +515,7 @@ section.curriculo button:hover {
     .flex {
         flex-direction: column;
     }
+   
 
     h2.titulo {
         font-size: 34px;
@@ -536,6 +537,10 @@ section.curriculo button:hover {
     section.topo-do-site .flex {
         gap: 40px;
     }
+    .logo{
+        align-items: center;
+        text-align: center;
+    }
 
     section.topo-do-site {
         padding: 20px 8%;
@@ -546,7 +551,7 @@ section.curriculo button:hover {
     }
 
     .topo-do-site .img-topo-site img {
-        width: 100%;
+        display: none;
     }
 
     /* ESPECIALIDADES */
@@ -580,7 +585,9 @@ section.curriculo button:hover {
     }
 
     .img-sobre img {
-        width: 100%;
+        width: 20px;
+        height: 20px;
+
     }
 
     /* PORTFÓLIO */
@@ -592,7 +599,7 @@ section.curriculo button:hover {
 
     .img-port {
         width: 100%;
-        max-width: 360px;
+        max-width: 200px;
         margin: 0 auto;
 
     }
